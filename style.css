@@ -1,0 +1,747 @@
+/* =========================================
+   1. GENEL AYARLAR VE RESET
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px; /* Geniş ekranlarda dağılmaması için eklendi */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   2. LOGO VE NAVİGASYON
+   ========================================= */
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 120px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover img {
+    transform: scale(1.05);
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #353A97;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: #353A97;
+}
+
+.nav-menu a:hover::after {
+    transform: scaleX(1);
+}
+
+/* =========================================
+   3. TOP BAR (İLETİŞİM & BAYRAKLAR)
+   ========================================= */
+.top-bar {
+    background-color: rgba(118, 108, 108, 0.8);
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #f4b400;
+}
+
+.flags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.flags img {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.flags img:hover {
+    transform: scale(1.2);
+}
+
+/* =========================================
+   4. HERO SECTION (GİRİŞ)
+   ========================================= */
+.hero-section {
+    height: 85vh;
+    background-image: url('/Fotoğraflar/inşaat1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 35px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-primary { background: #f4b400; color: #000; }
+.btn-secondary { border: 2px solid #fff; color: #fff; }
+
+.btn-primary:hover, .btn-secondary:hover { 
+    background: #fff; 
+    color: #000; 
+}
+
+/* =========================================
+   5. BÖLÜM BAŞLIKLARI VE AYIRICILAR
+   ========================================= */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #1a2a6c;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    width: 200px;
+    max-width: 80%;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.title-underline-Ana-Sayfa-Proje {
+    width: 700px; 
+    max-width: 90%;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.title-underline-Ana-Sayfa-Why-Us {
+    width: 400px; 
+    max-width: 90%;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+/* Özel Çizgi Uzunlukları */
+.services-section .title-underline { width: 480px; }
+.about-page .title-underline { width: 650px; }
+.projects-preview .title-underline-proje {
+    width: 600px;
+    height: 2px;
+    background-color: #000;
+    margin: 10px auto -100px;
+}
+
+.section-divider, .section-divider2, .section-divider3 {
+    height: 1px;
+    background-color: #000;
+    width: 95%;
+    margin: 100px auto;
+    opacity: 0.5;
+}
+
+.section-divider2 { margin-top: 65px; margin-bottom: 0; opacity: 0.7; }
+.section-divider3 { margin-top: 65px; margin-bottom: 150px; opacity: 0.7; }
+
+/* =========================================
+   6. HAKKIMIZDA & VİZYON-MİSYON
+   ========================================= */
+.about-page { padding: 60px 0; }
+
+.about-history-card {
+    border: 2px solid #000;
+    padding: 40px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 50px 0;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.history-badge {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    background: #1a2a6c;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.about-summary { padding: 1px 0 40px; text-align: center; }
+
+.about-text-content {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    font-style: italic;
+}
+
+.vision-mission-grid {
+    display: flex;             /* Grid yerine Flex daha kontrollü olabilir */
+    justify-content: center;   /* Ortalar */
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.vm-card {
+    flex: 1;                   /* İkisinin de eşit genişlikte olmasını sağlar */
+    min-width: 300px;          /* Çok fazla küçülmelerini engeller */
+    border: 2px solid #000;
+    padding: 40px;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+    border-color: #1a2a6c;
+}
+
+/* =========================================
+   7. PROJELER VE HİZMETLER (GRID YAPILARI)
+   ========================================= */
+/* =========================================
+   PROJELER & HİZMETLER GENEL DÜZENİ
+   ========================================= */
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; 
+    padding: 60px 20px;       /* Aşırı büyük padding (150px) kaldırıldı */
+    width: 100%;
+    max-width: 1400px;        /* Sayfanın sonsuza kadar genişlemesini engeller */
+    margin: 0 auto;           /* Konteynırı ortalar */
+    box-sizing: border-box;
+}
+
+.project-card, .service-card, .expertise-card {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.project-image img, .service-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: initial;  /* Resimlerin oranını korur, kutuyu doldurur */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-image img:hover { 
+    transform: scale(1.03); 
+    opacity: 0.9; 
+}
+
+.project-content, .service-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover, .service-card:hover {
+    border-color: #353A97;      /* Kenarlık rengi senin kullandığın mavi tonuna döner */
+    transform: translateY(-10px); /* Kart hafifçe yukarı doğru hareket eder */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Hafif bir gölge derinlik katar */
+}
+
+/* Eğer resmin de bu sırada hafif parlamasını istersen */
+.project-card:hover .project-image img , .service-card:hover{
+    opacity: 0.9;
+    transform: scale(1.02); /* Resim de kendi içinde çok hafif büyür */
+}
+
+/* =========================================
+   HAKKIMIZDA SAYFASI ÖZEL (YAN YANA)
+   ========================================= */
+.vision-mission-grid {
+    display: flex;             /* Kartları yan yana getirir */
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.vm-card {
+    flex: 1;                   /* Kartların eşit genişlikte olmasını sağlar */
+    min-width: 0;              /* Flex kutusunun taşmasını önler */
+}
+
+/* =========================================
+   7. MOBİL UYUMLULUK (RESPONSIVE)
+   ========================================= */
+@media (max-width: 1024px) {
+    .project-grid-container { 
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 40px 20px; 
+    }
+    .nav-menu ul { gap: 20px; }
+}
+
+@media (max-width: 992px) {
+    .contact-main-wrapper { flex-direction: column; align-items: center; }
+    .services-grid, .why-us-grid, .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    /* Mobilde kartlar alt alta gelmeli ki okunabilsin */
+    .vision-mission-grid {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid-container, .services-grid, .why-us-grid, .footer-grid, .expertise-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .footer-col { text-align: center; }
+    .footer-col h4::after { left: 50%; transform: translateX(-50%); }
+    .social-icons { justify-content: center; }
+}
+
+/* Hizmetler Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Proje Galeri (İç Sayfa) */
+.proje-galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeri-item {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.galeri-item:hover { border-color: #ff6600; transform: scale(1.05); }
+
+/* =========================================
+   8. İSTATİSTİKLER & NEDEN BİZ
+   ========================================= */
+.stats-bar { background: #000; color: #fff; padding: 40px 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.stat-number { display: block; font-size: 2.5rem; font-weight: 800; color: #f4b400; }
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.expertise-grid {
+    display: flex;            /* Kartları yan yana dizer */
+    justify-content: center;  /* Kartları ortalar */
+    gap: 30px;                /* Kartlar arasındaki boşluk */
+    flex-wrap: nowrap;        /* Büyük ekranlarda yan yana kalmalarını zorlar */
+    width: 100%;
+    max-width: 1200px;        /* Çok fazla yayılmaması için sınır */
+    margin: 0 auto;           /* Sayfayı ortalar */
+}
+
+.expertise-card {
+    flex: 1;                  /* İki kartın da eşit genişlikte olmasını sağlar */
+    border: 2px solid #000;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 0;             /* Flex kutusunda taşmayı önleyen kritik ayar */
+}
+.expertise-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #1a2a6c;    /* Üzerine gelince firmanın lacivertine döner */
+}
+.card-icon { font-size: 3rem; color: #f4b400; margin-bottom: 20px; }
+
+/* =========================================
+   9. İLETİŞİM BÖLÜMÜ (MAP & FORM)
+   ========================================= */
+.map-section-container { padding: 40px 0; display: flex; margin-top: 50px; justify-content: center; }
+.map-card { width: 100%; max-width: 1030px; background: #fff; padding: 15px; border: 2px solid #000; border-radius: 8px; }
+
+.contact-main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.feedback-form-box { flex: 1.5; max-width: 650px; background: #fff; border: 2px solid #000; padding: 30px; border-radius: 8px; }
+.contact-card { flex: 1; max-width: 350px; background: #fff; border: 2px solid #000; padding: 30px; border-radius: 8px; }
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.send-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.send-btn:hover { background: #1a2a6c; }
+
+/* =========================================
+   10. FOOTER
+   ========================================= */
+.main-footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 0 0 0;
+    margin-top: 50px;
+    border-top: 4px solid #1a2a6c;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.logo-img-footer { max-width: 370px; max-height: 300px; }
+
+.footer-col h4 {
+    color: #f4b400;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: ''; position: absolute; left: 0; bottom: -8px;
+    width: 40px; height: 2px; background: #f4b400;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: #bbb; text-decoration: none; transition: 0.3s; }
+.footer-col ul li a:hover { color: #fff; padding-left: 5px; }
+
+.social-icons { margin-top: 20px; display: flex; gap: 15px; }
+.social-icons a {
+    color: #fff; background: #333; width: 35px; height: 35px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; transition: 0.3s;
+}
+
+.footer-bottom {
+    background: #000; padding: 20px 0; text-align: center;
+    border-top: 1px solid #222; font-size: 13px; color: #777;
+}
+
+/* =========================================
+   1. TABLET DÜZENİ (992px ve Altı)
+   ========================================= */
+@media (max-width: 992px) {
+    /* Hizmetler ve Footer 2 sütun */
+    .services-grid, 
+    .footer-grid,
+    .why-us-grid,
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* =========================================
+   2. GENEL MOBİL DÜZENİ (768px ve Altı)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Header & Navigasyon */
+    .top-bar .container,
+    .contact-info,
+    .flex-between {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    /* Başlıklar ve Çizgiler */
+    .section-header h2 {
+        font-size: 1.8rem;
+        display: block;
+        text-align: center;
+    }
+
+    .title-underline {
+        margin: 10px auto !important;
+        width: 60% !important; /* Sabit px yerine % kullanarak taşmayı önledik */
+        max-width: 250px;
+    }
+
+    /* Hakkımızda Kartları (Alt alta) */
+    .vision-mission-grid {
+        flex-direction: column;
+    }
+}
+
+/* =========================================
+   3. TELEFON DÜZENİ (600px ve Altı)
+   ========================================= */
+@media (max-width: 600px) {
+    /* Tüm Grid Yapılarını Tek Sütuna Düşür */
+    .services-grid, 
+    .footer-grid, 
+    .project-grid-container, 
+    .why-us-grid, 
+    .expertise-grid {
+        grid-template-columns: 1fr !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Hizmet Kartı Mobilde Daralmasın Diye Tam Genişlik */
+    .service-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-image img {
+        height: 200px; /* Görseli mobilde biraz küçülterek yer kazandık */
+    }
+
+    .service-content {
+        padding: 20px 15px;
+    }
+
+    .service-content p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* Footer Özel Ayar */
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo-img-footer {
+        max-width: 200px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Modal Arka Planı */
+.modal {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed;
+    z-index: 2000; /* Header'ın üstünde olması için */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Siyah transparan arka plan */
+    overflow: auto;
+}
+
+/* Modal İçindeki Resim */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 5px;
+    animation: zoom 0.3s; /* Açılış efekti */
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* Kapatma Butonu */
+.close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover { color: #bbb; }
+
+/* Mobilde resim tam genişlik olsun */
+@media only screen and (max-width: 700px){
+    .modal-content { width: 100%; }
+}

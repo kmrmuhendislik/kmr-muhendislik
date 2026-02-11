@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Proje Detayı</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        .detay-container { display: flex; gap: 40px; padding: 50px; max-width: 1200px; margin: auto; }
+        .galeri-alani { flex: 1; }
+        .galeri-alani img { width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .bilgi-alani { flex: 1; }
+        .teknik-tablo { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .teknik-tablo td { padding: 12px; border-bottom: 1px solid #eee; }
+        .teknik-tablo td:first-child { font-weight: bold; color: #555; width: 30%; }
+        .btn-geri { font-weight: bold; display: inline-block; margin-bottom: 20px; text-decoration: none; color: #353A97; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="img/png" href="Fotoğraflar/KMR Logo2 .png">
+
+</head>
+<body>
+
+    <div id="main-wrapper">
+        
+        <div class="top-bar">
+            <div class="container flex-between">
+                <div class="flags">
+                    <a href="#"><img src="https://flagcdn.com/w20/tr.png" alt="TR"></a>
+                    <a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="EN"></a>
+                </div>
+
+                <div class="contact-info">
+                    <a href="tel:02128792236"><i class="fas fa-phone"></i> 0212 879 22 36</a>
+                    <a href="mailto:info@kmrmühendislik.com"><i class="fas fa-envelope"></i> info@kmrmühendislik.com</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="header-section">
+            <div class="container flex-between header-border">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none;"><img src="Fotoğraflar/KMR Logo.png" alt="KMR Logo"></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="Hakkımızda.html">HAKKIMIZDA</a></li>
+                        <li><a href="Hizmetler.html">HİZMETLER</a></li>
+                        <li><a href="Projeler.html">PROJELER</a></li>
+                        <li><a href="İletişim.html">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="section-divider2 container"></div>
+
+
+    <div class="detay-container">
+        <div class="galeri-alani">
+            <a href="Projeler.html" class="btn-geri" >&#11013 Projelere Dön</a>
+            <img id="anaResim" src="" alt="Proje Resmi">
+
+            <div class="proje-galeri" id="projeGaleriAlani"></div>
+        </div>
+
+        <div class="bilgi-alani">
+            <h1 id="projeBaslik">Yükleniyor...</h1>
+            <p id="projeAciklama"></p>
+            
+            <h3>Teknik Özellikler</h3>
+            <table class="teknik-tablo" id="teknikTablo">
+                </table>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-col about">
+            <img class="logo-img-footer" src="Fotoğraflar/KMR Logo.png" alt="KMR Logo">
+            <p>Yılların verdiği tecrübe ve güvenle, hayallerinizdeki yaşam alanlarını inşa ediyoruz. Kalite ve estetiği modern mimariyle buluşturuyoruz.</p>
+        </div>
+
+        <div class="footer-col links">
+            <h4>Hızlı Menü</h4>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="Hizmetler.html">Hizmetler</a></li>
+                <li><a href="İletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col links">
+            <h4>Hizmetlerimiz</h4>
+            <ul>
+                <li><a href="#">Mimari Tasarım</a></li>
+                <li><a href="#">İnşaat Danışmanı</a></li>
+                <li><a href="#">Genel Müteahhitlik</a></li>
+                <li><a href="#">Proje Bitirme</a></li>
+                <li><a href="#">İmar Hizmetleri</a></li>
+                <li><a href="#">Restorasyon Hizmetleri</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact">
+            <h4>İletişim</h4>
+            <p style="margin-bottom: 5px;"><i class="fas fa-envelope"></i> info@kmrmühendislik.com</p>
+            <p style="margin-bottom: 5px;"><i class="fas fa-phone"></i> 0212 879 22 36</p>
+            <p style="margin-bottom: 5px;"><i class="fas fa-map-marker-alt"></i> ALİRIZA KUZUCAN SİTESİ, BAŞAKŞEHİR MAHALLESİ SEYRANTEPE CADDESİ, A1 Blok NO: 4G, 34480 Başakşehir/İstanbul</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 KMR Mühendislik. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script src="JsCode.js"></script>
+</body>
+</html>

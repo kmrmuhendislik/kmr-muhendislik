@@ -336,24 +336,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 });
-
-// 1. Google Translate Başlatma Fonksiyonu
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'tr',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-    }, 'google_translate_element');
-}
-
-// 2. Bayrağa Tıklandığında Çalışacak Fonksiyon
-function translateTo(lang) {
-    var selectField = document.querySelector("#google_translate_element select");
-    if (selectField) {
-        selectField.value = lang;
-        // Değişikliği tetikle
-        selectField.dispatchEvent(new Event('change'));
-    }
-}
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

@@ -136,18 +136,20 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Küçük bir kontrol ekleyelim
+    if (typeof projeler === 'undefined') {
+        console.error("Projeler verisi yüklenemedi!");
+        return;
+    }
+
     const listeAlani = document.getElementById('proje-listesi-alani');
     let kartlarHtml = "";
     let sayac = 0;
 
     for (let id in projeler) {
         if (sayac >= 7) break; 
-
         const p = projeler[id];
-
-        const kisaMetin = p.aciklama.length > 100 
-            ? p.aciklama.substring(0, 100) + "..." 
-            : p.aciklama;
+        const kisaMetin = p.aciklama.length > 100 ? p.aciklama.substring(0, 100) + "..." : p.aciklama;
 
         kartlarHtml += `
             <div class="project-card">
@@ -161,11 +163,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>${kisaMetin}</p>
                 </div>
             </div>`;
-        
         sayac++;
     }
-
-    listeAlani.innerHTML = kartlarHtml;
+    if(listeAlani) {
+        listeAlani.innerHTML = kartlarHtml;
+    }
 });
 </script>
 

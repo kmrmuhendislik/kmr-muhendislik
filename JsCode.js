@@ -348,15 +348,18 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 
-// 2. Bayraklara tıklandığında çalışacak motor
 function translateTo(lang) {
-    // Önce Google'ın gizli seçici kutusunu bul
     const selectField = document.querySelector("#google_translate_element select");
+    
     if (selectField) {
+        // Eğer servis hazırsa çeviriyi yap
         selectField.value = lang;
-        // Tarayıcıya "değişiklik oldu" sinyali gönder
         selectField.dispatchEvent(new Event('change'));
     } else {
-        console.error("Google Çeviri henüz yüklenmedi. Lütfen 1-2 saniye bekleyin.");
+        // Eğer servis hazır değilse kullanıcıya uyarı çıkar
+        alert("Şu anda çeviri servisine bağlanılamıyor. Lütfen birkaç saniye sonra tekrar deneyiniz veya internet bağlantınızı kontrol ediniz.");
+        
+        // Konsola teknik detay yaz (senin görmen için)
+        console.warn("Google Translate Element bulunamadı. Script yüklenmemiş olabilir.");
     }
 }

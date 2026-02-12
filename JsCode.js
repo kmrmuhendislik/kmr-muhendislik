@@ -1,23 +1,23 @@
 const projeler = {
 'proje1': {
                 baslik: 'Akyarlar Villa Projesi',
-                resim: 'Fotoğraflar/Bodrum-Akyarlar.png',
-                galeri: ['Fotoğraflar/Bodrum-Akyarlar2.png'],
+                resim: 'İmages/Bodrum-Akyarlar.png',
+                galeri: ['İmages/Bodrum-Akyarlar2.png'],
                 aciklama: 'Bodrum\'un eşsiz manzarasında yükselen bu projemiz, akıllı ev sistemleri ve sürdürülebilir enerji çözümleriyle donatılmıştır.',
                 teknik: { 'Alan': '450 m²', 'Konum': 'Bodrum / Muğla', 'Oda Sayısı': '5+1', 'Teslim': '2024' }
             },
 
             'proje2': {
                 baslik: 'Duyu Göktürk',
-                resim: 'Fotoğraflar/Göktürk-Duyu.png',
-                galeri: ['Fotoğraflar/DUYU-GENEL-GORUNUS-02.jpg'],
+                resim: 'İmages/Göktürk-Duyu.png',
+                galeri: ['İmages/DUYU-GENEL-GORUNUS-02.jpg'],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
             },
 
             'proje3': {
                 baslik: 'İmperium No2',
-                resim: 'Fotoğraflar/İmperium-No2.webp',
+                resim: 'İmages/İmperium-No2.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -25,7 +25,7 @@ const projeler = {
 
             'proje4': {
                 baslik: 'Avrupa Konutları Güneşli',
-                resim: 'Fotoğraflar/Güneşli-AVP.jpg',
+                resim: 'İmages/Güneşli-AVP.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -33,7 +33,7 @@ const projeler = {
 
             'proje5': {
                 baslik: 'Mostar Concept',
-                resim: 'Fotoğraflar/Mostar-Concept.webp',
+                resim: 'İmages/Mostar-Concept.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -41,7 +41,7 @@ const projeler = {
 
             'proje6': {
                 baslik: 'Hayat Flora',
-                resim: 'Fotoğraflar/Hayat-Flora.webp',
+                resim: 'İmages/Hayat-Flora.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -49,15 +49,15 @@ const projeler = {
 
             'proje7': {
                 baslik: 'Hayat City',
-                resim: 'Fotoğraflar/Hayat-City-Mahmut-Bey-.webp',
-                galeri: ['Fotoğraflar/city.jpg','Fotoğraflar/city3.jpg'],
+                resim: 'İmages/Hayat-City-Mahmut-Bey-.webp',
+                galeri: ['İmages/city.jpg','İmages/city3.jpg'],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
             },
 
             'proje8': {
                 baslik: 'Avrupa Konutları Esentepe 1.Etap',
-                resim: '/Fotoğraflar/AVP-Esentepe.jpg',
+                resim: '/İmages/AVP-Esentepe.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -65,7 +65,7 @@ const projeler = {
 
             'proje9': {
                 baslik: 'Avrupa Konutları Esentepe 2.Etap',
-                resim: '/Fotoğraflar/ESTP-2.Etap.webp',
+                resim: '/İmages/ESTP-2.Etap.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -73,15 +73,15 @@ const projeler = {
 
             'proje10': {
                 baslik: 'BizimEvler 9',
-                resim: 'Fotoğraflar/Bizim-Evler-9.png',
-                galeri: ['Fotoğraflar/bizimEvler9.png'],
+                resim: 'İmages/Bizim-Evler-9.png',
+                galeri: ['İmages/bizimEvler9.png'],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
             },
 
             'proje11': {
                 baslik: 'BizimEvler 11',
-                resim: 'Fotoğraflar/bizimevler11.png',
+                resim: 'İmages/bizimevler11.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -89,7 +89,7 @@ const projeler = {
 
             'proje12': {
                 baslik: 'Mavera Sarayları',
-                resim: 'Fotoğraflar/Mavera-Sarayları.jpg',
+                resim: 'İmages/Mavera-Sarayları.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -97,7 +97,7 @@ const projeler = {
 
             'proje13': {
                 baslik: 'Avrupa Konutları Saklı Vadi',
-                resim: 'Fotoğraflar/Saklı-Vadi-Avrupa-Konutları.jpg',
+                resim: 'İmages/Saklı-Vadi-Avrupa-Konutları.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -105,7 +105,7 @@ const projeler = {
 
             'proje14': {
                 baslik: 'Limonlu Bahçe Konakları',
-                resim: 'Fotoğraflar/Limonlu-Bahçe.png',
+                resim: 'İmages/Limonlu-Bahçe.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -113,7 +113,7 @@ const projeler = {
 
             'proje15': {
                 baslik: 'EMAAR Toskana Vadisi',
-                resim: 'Fotoğraflar/EMAAR-Toskana-Vadisi.webp',
+                resim: 'İmages/EMAAR-Toskana-Vadisi.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -121,7 +121,7 @@ const projeler = {
 
             'proje16': {
                 baslik: 'Mostar Atakent',
-                resim: 'Fotoğraflar/Mostar-Atakent.jpg',
+                resim: 'İmages/Mostar-Atakent.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -129,7 +129,7 @@ const projeler = {
 
             'proje17': {
                 baslik: 'Mostar Mahal',
-                resim: 'Fotoğraflar/MostarMahal.png',
+                resim: 'İmages/MostarMahal.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -137,7 +137,7 @@ const projeler = {
 
             'proje18': {
                 baslik: 'Fikirtepe Evleri',
-                resim: 'Fotoğraflar/Fikirtepe.jpg',
+                resim: 'İmages/Fikirtepe.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -145,7 +145,7 @@ const projeler = {
 
             'proje19': {
                 baslik: 'Avrupa Konutları YamanEvler 2.Etap',
-                resim: 'Fotoğraflar/Yaman-Evler.jpg',
+                resim: 'İmages/Yaman-Evler.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -153,7 +153,7 @@ const projeler = {
 
             'proje20': {
                 baslik: 'Tema İstanbul',
-                resim: 'Fotoğraflar/Tema-İstanbul.jpg',
+                resim: 'İmages/Tema-İstanbul.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -161,7 +161,7 @@ const projeler = {
 
             'proje21': {
                 baslik: '>Vadi Referans',
-                resim: 'Fotoğraflar/Vadi-Referans.jpg',
+                resim: 'İmages/Vadi-Referans.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -169,7 +169,7 @@ const projeler = {
 
             'proje22': {
                 baslik: 'Vadi Panorama',
-                resim: 'Fotoğraflar/Vadi-Panaroma.png',
+                resim: 'İmages/Vadi-Panaroma.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -177,7 +177,7 @@ const projeler = {
 
             'proje23': {
                 baslik: 'Avrupa Konutları Başakşehir',
-                resim: 'Fotoğraflar/Basaksehir-Avrupa-Konutları-Projesi.jpg',
+                resim: 'İmages/Basaksehir-Avrupa-Konutları-Projesi.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -185,7 +185,7 @@ const projeler = {
 
             'proje24': {
                 baslik: 'BizimEvler Güzelce',
-                resim: 'Fotoğraflar/Güzelce.png',
+                resim: 'İmages/Güzelce.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -193,15 +193,15 @@ const projeler = {
 
             'proje25': {
                 baslik: 'Orman İstanbu',
-                resim: 'Fotoğraflar/Orman-İstanbul.jpg',
-                galeri: ['Fotoğraflar/E-Bahce - Ormen-Istanbul-Kagithane.jpg'],
+                resim: 'İmages/Orman-İstanbul.jpg',
+                galeri: ['İmages/E-Bahce - Ormen-Istanbul-Kagithane.jpg'],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
             },
 
             'proje26': {
                 baslik: 'Mavera Comfort',
-                resim: 'Fotoğraflar/comfort.png',
+                resim: 'İmages/comfort.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -209,7 +209,7 @@ const projeler = {
 
             'proje27': {
                 baslik: 'Mavera Başakşehir',
-                resim: 'Fotoğraflar/Mavera-Başakşehir.jpg',
+                resim: 'İmages/Mavera-Başakşehir.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -217,7 +217,7 @@ const projeler = {
 
             'proje28': {
                 baslik: 'Avrupa Konutları Yenimahalle',
-                resim: 'Fotoğraflar/yenimahalle.png',
+                resim: 'İmages/yenimahalle.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -225,7 +225,7 @@ const projeler = {
 
             'proje29': {
                 baslik: 'Bahçetepe Konutları',
-                resim: 'Fotoğraflar/bahcetepe-istanbu-.jpg',
+                resim: 'İmages/bahcetepe-istanbu-.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -233,7 +233,7 @@ const projeler = {
 
             'proje30': {
                 baslik: 'Konya Temaşehir',
-                resim: 'Fotoğraflar/Konya-Torkam.jpg',
+                resim: 'İmages/Konya-Torkam.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -241,7 +241,7 @@ const projeler = {
 
             'proje31': {
                 baslik: 'Gaziantep Medikal Hastanesi',
-                resim: 'Fotoğraflar/Gaziantep-Gazi-Medikal-Hastanesi.jpg.webp',
+                resim: 'İmages/Gaziantep-Gazi-Medikal-Hastanesi.jpg.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -249,7 +249,7 @@ const projeler = {
 
             'proje32': {
                 baslik: 'Elazığ Akgün Otel',
-                resim: 'Fotoğraflar/Elazığ_Akgün_Otel.webp',
+                resim: 'İmages/Elazığ_Akgün_Otel.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -257,7 +257,7 @@ const projeler = {
 
             'proje33': {
                 baslik: 'Çekmeköy Devlet Hastanesi',
-                resim: 'Fotoğraflar/Cekmeköy-Devlet-Hastanesi.jpg',
+                resim: 'İmages/Cekmeköy-Devlet-Hastanesi.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }

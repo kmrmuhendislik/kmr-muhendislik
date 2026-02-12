@@ -336,3 +336,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 });
+
+// --- ÇEVİRİ SİSTEMİ (JsCode.js EN ALTI) ---
+
+// 1. Google'ın aradığı ana fonksiyon (Dışarıda olmalı!)
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'tr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+// 2. Bayraklara tıklandığında çalışacak motor
+function translateTo(lang) {
+    // Önce Google'ın gizli seçici kutusunu bul
+    const selectField = document.querySelector("#google_translate_element select");
+    if (selectField) {
+        selectField.value = lang;
+        // Tarayıcıya "değişiklik oldu" sinyali gönder
+        selectField.dispatchEvent(new Event('change'));
+    } else {
+        console.error("Google Çeviri henüz yüklenmedi. Lütfen 1-2 saniye bekleyin.");
+    }
+}

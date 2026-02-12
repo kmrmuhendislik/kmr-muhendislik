@@ -65,7 +65,7 @@ const projeler = {
 
             'proje9': {
                 baslik: 'Avrupa Konutları Esentepe 2.Etap',
-                resim: '/images/ESTP-2-Etap.webp',
+                resim: '/images/ESTP-2.Etap.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -81,7 +81,7 @@ const projeler = {
 
             'proje11': {
                 baslik: 'BizimEvler 11',
-                resim: 'images/BizimEvler11.png',
+                resim: 'images/bizimEvler11.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -269,34 +269,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const projeId = urlParams.get('id');
 
-    if (projeId && projeler[projeId]) {
+    // Sadece ProjeDetay sayfasındaysak ve gerekli ID varsa çalış
+    const detayBaslik = document.getElementById('projeBaslik');
+    
+    if (projeId && projeler[projeId] && detayBaslik) {
         const p = projeler[projeId];
         
-        // Başlık ve Açıklama (Burada tam açıklamayı gösteriyoruz)
         document.getElementById('projeBaslik').innerText = p.baslik;
         document.getElementById('projeAciklama').innerText = p.aciklama; 
         
-        // Ana Resim Ayarı
         const anaResim = document.getElementById('anaResim');
-        anaResim.src = p.resim;
-        // Ana resme tıklandığında da büyümesi için fonksiyonu ekliyoruz
-        anaResim.onclick = function() { resmiBuyut(this); };
-        anaResim.style.cursor = "zoom-in";
-
-        // Galeri (Küçük Resimler) Oluşturma
-        let galeriHtml = "";
-        p.galeri.forEach(imgYolu => {
-            // Eskiden resimDegistir vardı, şimdi resmiBuyut ile değiştiriyoruz
-            galeriHtml += `<img src="${imgYolu}" onclick="resmiBuyut(this)" class="galeri-item" style="cursor: zoom-in; margin: 5px; border-radius: 5px;">`;
-        });
-        document.getElementById('projeGaleriAlani').innerHTML = galeriHtml;
-
-        // Teknik Tabloyu Oluşturma
-        let tabloHtml = "";
-        for (let anahtar in p.teknik) {
-            tabloHtml += `<tr><td>${anahtar}</td><td>${p.teknik[anahtar]}</td></tr>`;
+        if(anaResim) {
+            anaResim.src = p.resim;
+            anaResim.onclick = function() { resmiBuyut(this); };
+            anaResim.style.cursor = "zoom-in";
         }
-        document.getElementById('teknikTablo').innerHTML = tabloHtml;
+
+        const galeriAlani = document.getElementById('projeGaleriAlani');
+        if(galeriAlani) {
+            let galeriHtml = "";
+            p.galeri.forEach(imgYolu => {
+                galeriHtml += `<img src="${imgYolu}" onclick="resmiBuyut(this)" class="galeri-item" style="cursor: zoom-in; margin: 5px; border-radius: 5px;">`;
+            });
+            galeriAlani.innerHTML = galeriHtml;
+        }
+
+        const teknikTablo = document.getElementById('teknikTablo');
+        if(teknikTablo) {
+            let tabloHtml = "";
+            for (let anahtar in p.teknik) {
+                tabloHtml += `<tr><td>${anahtar}</td><td>${p.teknik[anahtar]}</td></tr>`;
+            }
+            teknikTablo.innerHTML = tabloHtml;
+        }
         
         document.title = p.baslik + " - Proje Detayı";
     }
@@ -330,8 +335,4 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     };
-
 });
-
-
-

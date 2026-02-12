@@ -249,7 +249,7 @@ const projeler = {
 
             'proje32': {
                 baslik: 'Elazığ Akgün Otel',
-                resim: 'Fotoğraflar/Elazığ Akgün Otel.webp',
+                resim: 'Fotoğraflar/Elazığ_Akgün_Otel.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }

@@ -17,7 +17,7 @@ const projeler = {
 
             'proje3': {
                 baslik: 'İmperium No2',
-                resim: 'images/İmperium-No2.webp',
+                resim: 'images/imperium-No2.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -25,7 +25,7 @@ const projeler = {
 
             'proje4': {
                 baslik: 'Avrupa Konutları Güneşli',
-                resim: 'images/Güneşli-AVP.jpg',
+                resim: 'images/Günesli-AVP.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -89,7 +89,7 @@ const projeler = {
 
             'proje12': {
                 baslik: 'Mavera Sarayları',
-                resim: 'images/Mavera-Sarayları.jpg',
+                resim: 'images/Mavera-Saraylari.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -97,7 +97,7 @@ const projeler = {
 
             'proje13': {
                 baslik: 'Avrupa Konutları Saklı Vadi',
-                resim: 'images/Saklı-Vadi-Avrupa-Konutları.jpg',
+                resim: 'images/Sakli-Vadi-Avrupa-Konutlari.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -153,7 +153,7 @@ const projeler = {
 
             'proje20': {
                 baslik: 'Tema İstanbul',
-                resim: 'images/Tema-İstanbul.jpg',
+                resim: 'images/Tema-istanbul.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -193,7 +193,7 @@ const projeler = {
 
             'proje25': {
                 baslik: 'Orman İstanbu',
-                resim: 'images/Orman-İstanbul.jpg',
+                resim: 'images/Orman-istanbul.jpg',
                 galeri: ['images/E-Bahce - Ormen-Istanbul-Kagithane.jpg'],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -209,7 +209,7 @@ const projeler = {
 
             'proje27': {
                 baslik: 'Mavera Başakşehir',
-                resim: 'images/Mavera-Başakşehir.jpg',
+                resim: 'images/Mavera-Basaksehir.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -249,7 +249,7 @@ const projeler = {
 
             'proje32': {
                 baslik: 'Elazığ Akgün Otel',
-                resim: 'images/Elazığ_Akgün_Otel.webp',
+                resim: 'images/Elazıg_Akgun_Otel.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -257,7 +257,7 @@ const projeler = {
 
             'proje33': {
                 baslik: 'Çekmeköy Devlet Hastanesi',
-                resim: 'images/Cekmeköy-Devlet-Hastanesi.jpg',
+                resim: 'images/Cekmekoy-Devlet-Hastanesi.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }

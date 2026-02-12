@@ -65,7 +65,7 @@ const projeler = {
 
             'proje9': {
                 baslik: 'Avrupa Konutları Esentepe 2.Etap',
-                resim: '/images/ESTP-2.Etap.webp',
+                resim: '/images/ESTP-2-Etap.webp',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -332,3 +332,4 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 });
+

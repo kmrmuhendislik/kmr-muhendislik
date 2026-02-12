@@ -160,7 +160,7 @@ const projeler = {
             },
 
             'proje21': {
-                baslik: '>Vadi Referans',
+                baslik: 'Vadi Referans',
                 resim: 'images/Vadi-Referans.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',

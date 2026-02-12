@@ -81,7 +81,7 @@ const projeler = {
 
             'proje11': {
                 baslik: 'BizimEvler 11',
-                resim: 'images/BizimEvler11.png',
+                resim: 'images/bizimEvler11.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -335,6 +335,25 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     };
-
 });
 
+// 1. Google Translate Başlatma Fonksiyonu
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'tr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+// 2. Bayrağa Tıklandığında Çalışacak Fonksiyon
+function translateTo(lang) {
+    var selectField = document.querySelector("#google_translate_element select");
+    if (selectField) {
+        selectField.value = lang;
+        // Değişikliği tetikle
+        selectField.dispatchEvent(new Event('change'));
+    }
+}
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

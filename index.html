@@ -22,9 +22,15 @@
         <div class="top-bar">
             <div class="container flex-between">
                 <div class="flags">
-                    <a href="#"><img src="https://flagcdn.com/w20/tr.png" alt="TR"></a>
-                    <a href="#"><img src="https://flagcdn.com/w20/gb.png" alt="EN"></a>
+                    <a href="javascript:void(0);" onclick="translateTo('tr')">
+                        <img src="images/tr-flag.png" alt="Türkçe" style="width:30px; cursor:pointer;">
+                    </a>
+                    <a href="javascript:void(0);" onclick="translateTo('en')">
+                        <img src="images/en-flag.png" alt="English" style="width:30px; cursor:pointer;">
+                    </a>
                 </div>
+
+                <div id="google_translate_element" style="display:none;"></div>
 
                 <div class="contact-info">
                     <a href="tel:02128792236"><i class="fas fa-phone"></i> 0212 879 22 36</a>
@@ -51,11 +57,11 @@
             </div>
         </header>
 
-        <section class="hero-section">
+        <section class="hero-section" >
     <div class="hero-overlay">
-        <div class="hero-content container">
+        <div class="hero-content container" >
             <h1>Geleceği Sağlam Temeller Üzerine İnşa Ediyoruz</h1>
-            <p>1980'den bugüne, ustalıkla modern tekniği birleştiren yapılar.</p>
+            <p>1986'den bugüne, ustalıkla modern tekniği birleştiren yapılar.</p>
             <div class="hero-btns">
                 <a href="Projeler.html" class="btn-primary">PROJELERİ İNCELE</a>
                 <a href="İletişim.html" class="btn-secondary">BİZE ULAŞIN</a>
@@ -305,6 +311,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </footer>
 
 </body>
-
 </html>
-

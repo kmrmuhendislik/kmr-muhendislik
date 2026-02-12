@@ -96,7 +96,7 @@ body {
    3. TOP BAR (İLETİŞİM & BAYRAKLAR)
    ========================================= */
 .top-bar {
-    background-color: rgba(118, 108, 108, 0.8);
+    background-color: #111;
     color: #fff;
     padding: 8px 0;
     font-size: 14px;
@@ -744,5 +744,4 @@ body {
 /* Mobilde resim tam genişlik olsun */
 @media only screen and (max-width: 700px){
     .modal-content { width: 100%; }
-
 }

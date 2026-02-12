@@ -81,7 +81,7 @@ const projeler = {
 
             'proje11': {
                 baslik: 'BizimEvler 11',
-                resim: 'images/bizimevler11.png',
+                resim: 'images/bizimEvler11.png',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -330,4 +330,5 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     };
+
 });

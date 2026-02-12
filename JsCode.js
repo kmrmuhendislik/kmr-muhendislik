@@ -177,7 +177,7 @@ const projeler = {
 
             'proje23': {
                 baslik: 'Avrupa Konutları Başakşehir',
-                resim: 'images/Basaksehir-Avrupa-Konutları-Projesi.jpg',
+                resim: 'images/Basaksehir-Avrupa-Konutlari-Projesi.jpg',
                 galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
@@ -330,4 +330,5 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     };
+
 });

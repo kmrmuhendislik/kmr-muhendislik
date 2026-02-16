@@ -74,7 +74,7 @@ const projeler = {
             'proje10': {
                 baslik: 'BizimEvler 9',
                 resim: 'images/Bizim-Evler-9.png',
-                galeri: ['images/bizimEvler9.png'],
+                galeri: [],
                 aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
                 teknik: { 'Alan': '12.000 m²', 'Konum': 'İstanbul / Levent', 'Kat Sayısı': '25', 'Otopark': '400 Araç' }
             },
@@ -362,4 +362,5 @@ function translateTo(lang) {
         // Konsola teknik detay yaz (senin görmen için)
         console.warn("Google Translate Element bulunamadı. Script yüklenmemiş olabilir.");
     }
+
 }

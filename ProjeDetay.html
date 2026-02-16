@@ -2,20 +2,110 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proje Detayı</title>
-    <link rel="stylesheet" href="style.css"> <style>
-        .detay-container { display: flex; gap: 40px; padding: 50px; max-width: 1200px; margin: auto; }
-        .galeri-alani { flex: 1; }
-        .galeri-alani img { width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .bilgi-alani { flex: 1; }
-        .teknik-tablo { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .teknik-tablo td { padding: 12px; border-bottom: 1px solid #eee; }
-        .teknik-tablo td:first-child { font-weight: bold; color: #555; width: 30%; }
-        .btn-geri { font-weight: bold; display: inline-block; margin-bottom: 20px; text-decoration: none; color: #353A97; }
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Genel Konteyner Ayarı */
+        .detay-container { 
+            display: flex; 
+            gap: 40px; 
+            padding: 30px 20px; 
+            max-width: 1200px; 
+            margin: auto; 
+            align-items: flex-start;
+        }
+
+        .galeri-alani { 
+            flex: 1.2;
+            width: 100%;
+        }
+
+        .galeri-alani img#anaResim { 
+            width: 100%; 
+            height: auto;
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+            object-fit: cover;
+            display: block;
+        }
+
+        .bilgi-alani { 
+            flex: 0.8;
+            width: 100%;
+        }
+
+        /* Başlık ve Metin Düzenlemeleri */
+        #projeBaslik {
+            font-size: 2rem;
+            color: #353A97;
+            margin-bottom: 15px;
+        }
+
+        #projeAciklama {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        .teknik-tablo { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            background: #fff;
+        }
+
+        .teknik-tablo td { 
+            padding: 15px 12px; 
+            border-bottom: 1px solid #eee;
+            font-size: 15px; 
+        }
+
+        .teknik-tablo td:first-child { 
+            font-weight: bold; 
+            color: #353A97; /* Kurumsal mavi */
+            width: 45%; 
+        }
+
+        .btn-geri { 
+            font-weight: bold; 
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 20px; 
+            text-decoration: none; 
+            color: #353A97; 
+            transition: 0.3s;
+        }
+
+        .btn-geri:hover {
+            transform: translateX(-5px);
+        }
+
+        /* --- MOBİL UYUMLULUK (Responsive) --- */
+        @media (max-width: 992px) {
+            .detay-container { 
+                flex-direction: column; /* Mobilde alt alta diz */
+                gap: 30px;
+                padding: 20px;
+            }
+
+            .galeri-alani, .bilgi-alani {
+                flex: none;
+                width: 100%;
+            }
+
+            #projeBaslik {
+                font-size: 1.5rem;
+            }
+            
+            /* Tablo mobilde daha rahat okunsun */
+            .teknik-tablo td {
+                padding: 12px 8px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="img/png" href="images/KMR_Logo2.png">
-
 </head>
 <body>
 
@@ -38,41 +128,44 @@
         <header class="header-section">
             <div class="container flex-between header-border">
                 <div class="logo">
-                    <a href="index.html" style="text-decoration: none;"><img src="images/KMR_Logo.png" alt="KMR Logo"></a>
+                    <a href="index.html" style="text-decoration: none;">
+                        <img src="images/KMR_Logo.png" alt="KMR Logo">
+                    </a>
+
                 </div>
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="Hakkımızda.html">HAKKIMIZDA</a></li>
                         <li><a href="Hizmetler.html">HİZMETLER</a></li>
-                        <li><a href="Projeler.html">PROJELER</a></li>
+                        <li><a href="Projeler.html" style="color: #353A97;">PROJELER</a></li>
                         <li><a href="İletişim.html">İLETİŞİM</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <div class="section-divider2 container"></div>
+        <div class="section-divider3 container"></div>
 
+        <div id="google_translate_element" style="display:none;"></div>
 
-    <div class="detay-container">
-        <div class="galeri-alani">
-            <a href="Projeler.html" class="btn-geri" >&#11013 Projelere Dön</a>
-            <img id="anaResim" src="" alt="Proje Resmi">
+        <main class="detay-container">
+            <div class="galeri-alani">
+                <a href="Projeler.html" class="btn-geri">&#11013; Projelere Dön</a>
+                <img id="anaResim" src="images/placeholder.jpg" alt="Proje Resmi">
+                <div class="proje-galeri" id="projeGaleriAlani"></div>
+            </div>
 
-            <div class="proje-galeri" id="projeGaleriAlani"></div>
-        </div>
+            <div class="bilgi-alani">
+                <h1 id="projeBaslik">Yükleniyor...</h1>
+                <p id="projeAciklama"></p>
+                
+                <h3><i class="fas fa-info-circle"></i> Teknik Özellikler</h3>
+                <table class="teknik-tablo" id="teknikTablo">
+                    </table>
+            </div>
+        </main>
 
-        <div class="bilgi-alani">
-            <h1 id="projeBaslik">Yükleniyor...</h1>
-            <p id="projeAciklama"></p>
-            
-            <h3>Teknik Özellikler</h3>
-            <table class="teknik-tablo" id="teknikTablo">
-                </table>
-        </div>
-    </div>
-
-    <footer class="main-footer">
+        <footer class="main-footer">
     <div class="container footer-grid">
         <div class="footer-col about">
             <img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo">
@@ -101,6 +194,17 @@
             </ul>
         </div>
 
+        <div class="footer-col links">
+            <h4>Projelerimiz</h4>
+            <ul>
+                <li><a href="#">Akyarlar Villa Projesi</a></li>
+                <li><a href="#">Duyu Göktürk</a></li>
+                <li><a href="#">İmperium No2</a></li>
+                <li><a href="#">Mostar Concept</a></li>
+                <li><a href="#">Hayat Flora</a></li>
+            </ul>
+        </div>
+
         <div class="footer-col contact">
             <h4>İletişim</h4>
             <p style="margin-bottom: 5px;"><i class="fas fa-envelope"></i> info@kmrmühendislik.com</p>
@@ -118,13 +222,14 @@
         <p>&copy; 2024 KMR Mühendislik. Tüm Hakları Saklıdır.</p>
     </div>
 </footer>
+    </div>
 
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
 
-<script src="JsCode.js"></script>
+    <script src="JsCode.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

@@ -143,6 +143,37 @@
     </div>
 </footer>
 
+<script>
+    // 1. ADIM: Sadece bir projeye tıklandığında konumu kaydet
+    document.addEventListener('click', function(e) {
+        // Eğer tıklanan eleman bir proje kartı veya linki ise
+        if (e.target.closest('.project-card') || e.target.closest('a')) {
+            sessionStorage.setItem('projectsScrollPos', window.scrollY);
+            sessionStorage.setItem('fromProjects', 'true'); // Projelerden gidildiğini işaretle
+        }
+    });
+
+    // 2. ADIM: Sayfa yüklendiğinde kontrol et
+    window.addEventListener('load', function() {
+        const scrollPos = sessionStorage.getItem('projectsScrollPos');
+        const fromProjects = sessionStorage.getItem('fromProjects');
+
+        // Sadece 'projectsScrollPos' varsa VE biz şu an Projeler sayfasındaysak konumu uygula
+        // (Bu kod Proje Detay sayfasında çalışmayacağı için orayı etkilemez)
+        if (scrollPos && window.location.pathname.includes('Projeler.html')) {
+            // Tarayıcının sayfayı render etmesi için çok kısa bir bekleme
+            setTimeout(function() {
+                window.scrollTo({
+                    top: parseInt(scrollPos),
+                    behavior: 'auto'
+                });
+                // Konumu uyguladıktan sonra işareti temizle ki normal yenilemelerde en üste gitsin
+                sessionStorage.removeItem('fromProjects');
+            }, 100);
+        }
+    });
+</script>
+
 <script src="JsCode.js"></script>
 </body>
 </html>

@@ -16,6 +16,9 @@
 </head>
 
 <body class="home-page">
+    <div id="splash-screen">
+    <img src="images/KMR_Logo.png" alt="KMR Mühendislik Logo" class="splash-logo">
+</div>
 
     <div id="main-wrapper">
         
@@ -49,7 +52,13 @@
                     <ul>
                         <li><a href="Hakkımızda.html">HAKKIMIZDA</a></li>
                         <li><a href="Hizmetler.html">HİZMETLER</a></li>
-                        <li><a href="Projeler.html">PROJELER</a></li>
+                        <li class="dropdown">
+                            <a href="#">PROJELER</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="DevamEdenProjeler.html"><span>Devam Eden Projeler</span></a></li>
+                                <li><a href="Projeler.html"><span>Biten Projeler</span></a></li>
+                            </ul>
+                        </li>
                         <li><a href="İletişim.html">İLETİŞİM</a></li>
                     </ul>
                 </nav>
@@ -264,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="main-footer">
     <div class="container footer-grid">
         <div class="footer-col about">
-            <img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo">
+            <a href="#"><img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo"></a>
             <p>Yılların verdiği tecrübe ve güvenle, hayallerinizdeki yaşam alanlarını inşa ediyoruz. Kalite ve estetiği modern mimariyle buluşturuyoruz.</p>
         </div>
 
@@ -281,23 +290,23 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-col links">
             <h4>Hizmetlerimiz</h4>
             <ul>
-                <li><a href="#">Mimari Tasarım</a></li>
-                <li><a href="#">İnşaat Danışmanı</a></li>
-                <li><a href="#">Genel Müteahhitlik</a></li>
-                <li><a href="#">Proje Bitirme</a></li>
-                <li><a href="#">İmar Hizmetleri</a></li>
-                <li><a href="#">Restorasyon Hizmetleri</a></li>
+                <li><a href="Hizmetler.html">Mimari Tasarım</a></li>
+                <li><a href="Hizmetler.html">İnşaat Danışmanı</a></li>
+                <li><a href="Hizmetler.html">Genel Müteahhitlik</a></li>
+                <li><a href="Hizmetler.html">Proje Bitirme</a></li>
+                <li><a href="Hizmetler.html">İmar Hizmetleri</a></li>
+                <li><a href="Hizmetler.html">Restorasyon Hizmetleri</a></li>
             </ul>
         </div>
 
                         <div class="footer-col links">
             <h4>Projelerimiz</h4>
             <ul>
-                <li><a href="#">Akyarlar Villa Projesi</a></li>
-                <li><a href="#">Duyu Göktürk</a></li>
-                <li><a href="#">İmperium No2</a></li>
-                <li><a href="#">Mostar Concept</a></li>
-                <li><a href="#">Hayat Flora</a></li>
+                <li><a href="/ProjeDetay.html?id=proje1">Akyarlar Villa Projesi</a></li>
+                <li><a href="/ProjeDetay.html?id=proje2">Duyu Göktürk</a></li>
+                <li><a href="/ProjeDetay.html?id=proje3">İmperium No2</a></li>
+                <li><a href="/ProjeDetay.html?id=proje4">Avrupa Konutları Güneşli</a></li>
+                <li><a href="/ProjeDetay.html?id=proje5">Mostar Concept</a></li>
             </ul>
         </div>
 
@@ -308,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p style="margin-bottom: 5px;"><i class="fas fa-map-marker-alt"></i> ALİRIZA KUZUCAN SİTESİ, BAŞAKŞEHİR MAHALLESİ SEYRANTEPE CADDESİ, A1 Blok NO: 4G, 34480 Başakşehir/İstanbul</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/kemerogullariinsaat/"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
@@ -319,5 +328,45 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </footer>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.getElementById('splash-screen');
+    const splashLogo = document.querySelector('.splash-logo');
+    const headerLogo = document.querySelector('.logo img'); // Header'daki asıl logon
+
+    setTimeout(() => {
+        // 1. Header'daki logonun o anki konumunu ölç
+        const rect = headerLogo.getBoundingClientRect();
+
+        // 2. Splash logosuna bu koordinatları uygula
+        splashLogo.style.position = 'fixed';
+        splashLogo.style.top = rect.top + 'px';
+        splashLogo.style.left = rect.left + 'px';
+        splashLogo.style.width = rect.width + 'px';
+        splashLogo.style.height = rect.height + 'px';
+        
+        // Animasyon sınıfını ekle (geçişleri başlatır)
+        splashLogo.classList.add('animate-to-header');
+
+        // 3. Bekleme ve Saydamlaşma
+        setTimeout(() => {
+            splashScreen.style.opacity = '0';
+            
+            if (headerLogo) {
+                headerLogo.style.opacity = '1';
+                headerLogo.style.visibility = 'visible';
+            }
+
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+            }, 1000);
+
+        }, 1600); // Hareket süresi + kısa bekleme
+
+    }, 1000); 
+});
+</script>
+
 </body>
 </html>

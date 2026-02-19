@@ -39,7 +39,13 @@
                     <ul>
                         <li><a href="Hakkımızda.html">HAKKIMIZDA</a></li>
                         <li><a href="Hizmetler.html">HİZMETLER</a></li>
-                        <li><a href="Projeler.html">PROJELER</a></li>
+                        <li class="dropdown">
+                            <a style="color: #353A97">PROJELER</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="DevamEdenProjeler.html"><span>Devam Eden Projeler</span></a></li>
+                                <li><a href="Projeler.html"><span>Biten Projeler</span></a></li>
+                            </ul>
+                        </li>
                         <li><a href="İletişim.html" style="color: #353A97;">İLETİŞİM</a></li>
                     </ul>
                 </nav>
@@ -70,13 +76,33 @@
     
     <div class="feedback-form-box">
         <h3>Bize Mesaj Gönderin</h3>
-        <form class="contact-form">
-            <p>Ad Soyad : <div class="form-group"><input type="text"></div></p>
-            <p>E-Posta Adresi : <div class="form-group"><input type="email"></div></p>
-            <p>Telefon : <div class="form-group"><input type="telefon"></div></p>
-            <p>Mesaj : <div class="form-group"><textarea rows="4"></textarea></div></p>
-            <button type="submit" class="send-btn">GÖNDER</button>
-        </form>
+        <form id="contact-form" class="contact-form">
+    <p>Ad Soyad : 
+        <div class="form-group">
+            <input type="text" name="user_name" required>
+        </div>
+    </p>
+    
+    <p>E-Posta Adresi : 
+        <div class="form-group">
+            <input type="email" name="user_email" required>
+        </div>
+    </p>
+    
+    <p>Telefon : 
+        <div class="form-group">
+            <input type="tel" name="user_phone" required>
+        </div>
+    </p>
+    
+    <p>Mesaj : 
+        <div class="form-group">
+            <textarea name="message" rows="4" required></textarea>
+        </div>
+    </p>
+    
+    <button type="submit" class="send-btn">GÖNDER</button>
+</form>
     </div>
 
     <div class="contact-card">
@@ -94,7 +120,7 @@
 <footer class="main-footer">
     <div class="container footer-grid">
         <div class="footer-col about">
-            <img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo">
+            <a href="#"><img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo"></a>
             <p>Yılların verdiği tecrübe ve güvenle, hayallerinizdeki yaşam alanlarını inşa ediyoruz. Kalite ve estetiği modern mimariyle buluşturuyoruz.</p>
         </div>
 
@@ -111,23 +137,23 @@
         <div class="footer-col links">
             <h4>Hizmetlerimiz</h4>
             <ul>
-                <li><a href="#">Mimari Tasarım</a></li>
-                <li><a href="#">İnşaat Danışmanı</a></li>
-                <li><a href="#">Genel Müteahhitlik</a></li>
-                <li><a href="#">Proje Bitirme</a></li>
-                <li><a href="#">İmar Hizmetleri</a></li>
-                <li><a href="#">Restorasyon Hizmetleri</a></li>
+                <li><a href="Hizmetler.html">Mimari Tasarım</a></li>
+                <li><a href="Hizmetler.html">İnşaat Danışmanı</a></li>
+                <li><a href="Hizmetler.html">Genel Müteahhitlik</a></li>
+                <li><a href="Hizmetler.html">Proje Bitirme</a></li>
+                <li><a href="Hizmetler.html">İmar Hizmetleri</a></li>
+                <li><a href="Hizmetler.html">Restorasyon Hizmetleri</a></li>
             </ul>
         </div>
 
         <div class="footer-col links">
             <h4>Projelerimiz</h4>
             <ul>
-                <li><a href="#">Akyarlar Villa Projesi</a></li>
-                <li><a href="#">Duyu Göktürk</a></li>
-                <li><a href="#">İmperium No2</a></li>
-                <li><a href="#">Mostar Concept</a></li>
-                <li><a href="#">Hayat Flora</a></li>
+                <li><a href="/ProjeDetay.html?id=proje1">Akyarlar Villa Projesi</a></li>
+                <li><a href="/ProjeDetay.html?id=proje2">Duyu Göktürk</a></li>
+                <li><a href="/ProjeDetay.html?id=proje3">İmperium No2</a></li>
+                <li><a href="/ProjeDetay.html?id=proje4">Avrupa Konutları Güneşli</a></li>
+                <li><a href="/ProjeDetay.html?id=proje5">Mostar Concept</a></li>
             </ul>
         </div>
 
@@ -138,7 +164,7 @@
             <p style="margin-bottom: 5px;"><i class="fas fa-map-marker-alt"></i> ALİRIZA KUZUCAN SİTESİ, BAŞAKŞEHİR MAHALLESİ SEYRANTEPE CADDESİ, A1 Blok NO: 4G, 34480 Başakşehir/İstanbul</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/kemerogullariinsaat/"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
@@ -148,6 +174,37 @@
         <p>&copy; 2024 KMR Mühendislik. Tüm Hakları Saklıdır.</p>
     </div>
 </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+(function() {
+    // EmailJS hesabından aldığın Public Key'i buraya yaz
+    emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const btn = document.querySelector('.send-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'GÖNDERİLİYOR...';
+    btn.disabled = true; // Çok kez tıklanmasını engeller
+
+    // Kendi Service ID ve Template ID bilgilerini yaz
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(function() {
+            alert('Mesajınız başarıyla KMR Mühendislik ekibine iletildi!');
+            btn.textContent = originalText;
+            btn.disabled = false;
+            document.getElementById('contact-form').reset(); // Formu temizler
+        }, function(error) {
+            alert('Gönderim sırasında bir hata oluştu: ' + JSON.stringify(error));
+            btn.textContent = originalText;
+            btn.disabled = false;
+        });
+});
+</script>
 
 </body>
 </html>

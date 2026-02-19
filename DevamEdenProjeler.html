@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmetler</title>
+    <title>Projeler</title>
     <link rel="icon" type="img/png" href="images/KMR_Logo2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -32,11 +32,12 @@
                     <a href="index.html" style="text-decoration: none;">
                         <img src="images/KMR_Logo.png" alt="KMR Logo">
                     </a>
+
                 </div>
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="Hakkımızda.html">HAKKIMIZDA</a></li>
-                        <li><a href="Hizmetler.html" style="color: #353A97;">HİZMETLER</a></li>
+                        <li><a href="Hizmetler.html">HİZMETLER</a></li>
                         <li class="dropdown">
                             <a style="color: #353A97">PROJELER</a>
                             <ul class="dropdown-menu">
@@ -50,68 +51,55 @@
             </div>
         </header>
 
-        <div class="section-divider2 container"></div>
+        <div class="section-divider3 container"></div>
 
-           <section class="services-section container" style="gap: 20px;">
-    <div class="section-header">
-        <h2>HİZMETLERİMİZ</h2>
-        <div class="title-underline"></div>
+        <div class="section-header">
+            <h2>Devam Eden Projelerimiz</h2>
+            <div class="title-underline-Ana-Sayfa-Why-Us"></div>
+        <div id="proje-listesi-alani" class="project-grid-container">
     </div>
-
-    <div class="services-grid">
+    </div>
         
-        <div class="service-card">
-            <div class="service-image"><img src="images/Mimari-Tasarim.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>Mimari Tasarım</h3>
-                <p>Sıradanlığa yer bırakmayız. Güçlü çizgilerle şekillenen, zamana meydan okuyan mimari tasarımlar üretiriz. Estetik ve fonksiyonu prestijin doğal bir parçası hâline getirir, kalıcı değer yaratan yapılar ortaya koyarız.</p>
-            </div>
-        </div>
+<script src="JsCode.js"></script>
 
-        <div class="service-card">
-            <div class="service-image"><img src="images/insaat-Danismanligi.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>İnşaat Danışmanı</h3>
-                <p>Projelerin her aşamasında kontrolü elinde tutan, riski yöneten ve süreci profesyonelce yönlendiren danışmanlık anlayışı sunuyoruz.</p>
-            </div>
-        </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Küçük bir kontrol ekleyelim
+    if (typeof projeler === 'undefined') {
+        console.error("Projeler verisi yüklenemedi!");
+        return;
+    }
 
-        <div class="service-card">
-            <div class="service-image"><img src="images/Genel-Muteahhitlik.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>Genel Müteahhitlik</h3>
-                <p>Temelden anahtar teslimine kadar, tam sorumluluk ve mutlak disiplin ile projeleri yönetiyor; kaliteyi şansa bırakmıyoruz.</p>
-            </div>
-        </div>
+    const listeAlani = document.getElementById('proje-listesi-alani');
+    let kartlarHtml = "";
+    let sayac = 0;
 
-        <div class="service-card">
-            <div class="service-image"><img src="images/Proje-Bitirme.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>Proje Bitirme</h3>
-                <p>Başlanan her işi eksiksiz, hatasız ve zamanında teslim ederiz. Taahhüdümüz söz değil, tamamlanmış projelerdir.</p>
-            </div>
-        </div>
+    for (let id in projeler) {
+        if (sayac >= 7) break; 
+        const p = projeler[id];
+        const kisaMetin = p.aciklama.length > 100 ? p.aciklama.substring(0, 100) + "..." : p.aciklama;
 
-        <div class="service-card">
-            <div class="service-image"><img src="images/imar-Hizmetleri.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>İmar Hizmetleri</h3>
-                <p>Mevzuata hâkim, detaylara hükmeden ve süreci hızlandıran stratejik imar çözümleri ile projelere güçlü bir zemin hazırlarız.</p>
-            </div>
-        </div>
+        kartlarHtml += `
+            <div class="project-card">
+                <div class="project-image">
+                    <a href="ProjeDetay.html?id=${id}">
+                        <img src="${p.resim}" alt="${p.baslik}">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3>${p.baslik}</h3>
+                    <p>${kisaMetin}</p>
+                </div>
+            </div>`;
+        sayac++;
+    }
+    if(listeAlani) {
+        listeAlani.innerHTML = kartlarHtml;
+    }
+});
+</script>
 
-        <div class="service-card">
-            <div class="service-image"><img src="images/restorasyon.png" alt="Proje 1"></a></div>
-            <div class="service-content">
-                <h3>Restorasyon Hizmetleri</h3>
-                <p>Geçmişin izlerini tavizsiz bir hassasiyetle koruyan, yüksek uzmanlık ve mutlak disiplin gerektiren restorasyon çözümleri sunuyor; mimari mirası aslına sadık kalarak geleceğe güçlü şekilde taşıyoruz.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-        <footer class="main-footer">
+<footer class="main-footer">
     <div class="container footer-grid">
         <div class="footer-col about">
             <a href="#"><img class="logo-img-footer" src="images/KMR_Logo.png" alt="KMR Logo"></a>
@@ -123,12 +111,12 @@
             <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
                 <li><a href="Hakkımızda.html">Hakkımızda</a></li>
-                <li><a href="Projeler.html">Projelerimiz</a></li>
+                <li><a href="Hizmetler.html">Hizmetler</a></li>
                 <li><a href="İletişim.html">İletişim</a></li>
             </ul>
         </div>
 
-                <div class="footer-col links">
+        <div class="footer-col links">
             <h4>Hizmetlerimiz</h4>
             <ul>
                 <li><a href="Hizmetler.html">Mimari Tasarım</a></li>
@@ -168,6 +156,38 @@
         <p>&copy; 2024 KMR Mühendislik. Tüm Hakları Saklıdır.</p>
     </div>
 </footer>
-        
+
+<script>
+    // 1. ADIM: Sadece bir projeye tıklandığında konumu kaydet
+    document.addEventListener('click', function(e) {
+        // Eğer tıklanan eleman bir proje kartı veya linki ise
+        if (e.target.closest('.project-card') || e.target.closest('a')) {
+            sessionStorage.setItem('projectsScrollPos', window.scrollY);
+            sessionStorage.setItem('fromProjects', 'true'); // Projelerden gidildiğini işaretle
+        }
+    });
+
+    // 2. ADIM: Sayfa yüklendiğinde kontrol et
+    window.addEventListener('load', function() {
+        const scrollPos = sessionStorage.getItem('projectsScrollPos');
+        const fromProjects = sessionStorage.getItem('fromProjects');
+
+        // Sadece 'projectsScrollPos' varsa VE biz şu an Projeler sayfasındaysak konumu uygula
+        // (Bu kod Proje Detay sayfasında çalışmayacağı için orayı etkilemez)
+        if (scrollPos && window.location.pathname.includes('Projeler.html')) {
+            // Tarayıcının sayfayı render etmesi için çok kısa bir bekleme
+            setTimeout(function() {
+                window.scrollTo({
+                    top: parseInt(scrollPos),
+                    behavior: 'auto'
+                });
+                // Konumu uyguladıktan sonra işareti temizle ki normal yenilemelerde en üste gitsin
+                sessionStorage.removeItem('fromProjects');
+            }, 100);
+        }
+    });
+</script>
+
+<script src="JsCode.js"></script>
 </body>
 </html>

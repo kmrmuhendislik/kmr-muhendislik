@@ -92,6 +92,62 @@ body {
     transform: scaleX(1);
 }
 
+/* --- PROJELER DROPDOWN AYARLARI --- */
+
+/* 1. Kapsayıcıyı hizala */
+.nav-menu ul li {
+    position: relative; /* Alt menünün buna göre konumlanması için şart */
+}
+
+/* 2. Alt menüyü başlangıçta gizle ve stilini ver */
+.dropdown-menu {
+    display: none;             /* Başlangıçta gizli */
+    position: absolute;        /* Sayfa akışını bozmaz, üstte yüzer */
+    top: 100%;                 /* Ana linkin tam altından başlar */
+    left: 0;                   /* Sol kenara yasla */
+    background-color: #ffffff; /* Arkaplan beyaz (veya siyah tercih edebilirsin) */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 220px;          /* Menü genişliği */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Hafif gölge */
+    z-index: 1000;
+    border-top: 3px solid #353A97; /* Senin kullandığın mavi tonu */
+}
+
+/* 3. Menüdeki her bir satırı alt alta diz */
+.dropdown-menu li {
+    display: block; 
+    width: 100%;
+}
+
+/* 4. Alt menüdeki linklerin tasarımı */
+.dropdown-menu li a {
+    color: #333 !important;    /* Yazı rengi */
+    padding: 12px 20px !important;
+    font-size: 15px !important;
+    text-transform: none !important; /* Büyük harf zorunluluğunu kaldırır */
+    font-weight: 500 !important;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* 5. Alt menü linkine hover olunca çizgi çıkmasın, renk değişsin */
+.dropdown-menu li a::after {
+    display: none; /* Ana menüdeki alt çizgiyi burada iptal ediyoruz */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f8f9fa;
+    color: #353A97 !important;
+    padding-left: 25px !important; /* Hafif sağa kayma efekti */
+}
+
+/* 6. SİHİRLİ DOKUNUŞ: Üzerine gelince göster */
+.nav-menu ul li:hover .dropdown-menu {
+    display: block; /* Sadece fare üzerindeyken görünür yap */
+}
+
 /* =========================================
    3. TOP BAR (İLETİŞİM & BAYRAKLAR)
    ========================================= */
@@ -196,6 +252,8 @@ body {
     text-decoration: none;
     border-radius: 4px;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary { background: #f4b400; color: #000; }
@@ -386,12 +444,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Hafif bir gölge derinlik katar */
 }
 
-/* Eğer resmin de bu sırada hafif parlamasını istersen */
-.project-card:hover .project-image img , .service-card:hover{
-    opacity: 0.9;
-    transform: scale(1.02); /* Resim de kendi içinde çok hafif büyür */
-}
-
 /* =========================================
    HAKKIMIZDA SAYFASI ÖZEL (YAN YANA)
    ========================================= */
@@ -545,6 +597,10 @@ body {
     cursor: pointer;
     transition: 0.3s;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
 }
 
 .send-btn:hover { background: #1a2a6c; }
@@ -804,4 +860,181 @@ body {
 .hero-overlay {
     z-index: 2; /* Slaytların (z-index:1) üstüne çıkarır */
     position: relative;
+}
+
+/* Splash Screen Arkaplanı - Aynı kalıyor */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000; /* Çok yüksek bir değer */
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Splash Logosu Başlangıç Stili */
+.splash-logo {
+    width: 400px; /* Ortadaki büyük hali */
+    z-index: 10001;
+    position: relative;
+}
+
+/* HAREKET ANİMASYONU */
+@keyframes moveToHeader {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px; /* Splash ekranındaki başlangıç genişliği */
+        height: auto;
+    }
+    100% {
+        transform: translate(0, 0); 
+        height: auto;
+    }
+}
+
+.animate-to-header {
+    position: fixed !important;
+    z-index: 10001;
+    /* Cubic-bezier geçişi daha yumuşak ve doğal bir hareket sağlar */
+    animation: moveToHeader 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes moveToHeader {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 280px; /* Mobilde başlangıç boyutu daha küçük olsun */
+        }
+        100% {
+            /* Mobil ekran görüntüne göre bu değerler değişebilir */
+            top: 107px;  /* Mobilde logonun üstten mesafesi */
+            left: 50%; /* Mobilde genelde logo ortalanır */
+            transform: translate(-50%, 0); /* Yatayda ortalamak için */
+            width: 280px; /* Mobildeki hedef genişlik (Görsele göre ayarladım) */
+        }
+    }
+
+    .splash-logo {
+        width: 280px; /* Başlangıçta çok büyük durmaması için */
+    }
+}
+
+/* ================================
+   NAV MENU TEMİZ FINAL SÜRÜM
+================================ */
+
+/* Sadece nav alanını etkilesin */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+/* ANA LINKLER */
+.nav-menu ul li > a {
+    display: inline-block; /* block kaldırıldı */
+    padding: 20px 25px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Premium underline */
+.nav-menu ul li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    height: 2px;             
+    background: #353A97;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+     transform: scaleX(0);     
+}
+
+.nav-menu ul li > a:hover::after {
+    width: 100%;
+}
+
+/* ================================
+   PREMIUM DROPDOWN
+================================ */
+
+.nav-menu ul li ul.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%; /* hover gap bug fix */
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 260px;
+    background: #353A97;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    border-radius: 8px;
+}
+
+/* Hover Açılış */
+.nav-menu ul li:hover > ul.dropdown-menu,
+.nav-menu ul li ul.dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Alt Menü Elemanları */
+.nav-menu ul li ul.dropdown-menu li {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Alt Menü Linkleri */
+.nav-menu ul li ul.dropdown-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    color: #ffffff !important;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+/* SADECE YAZI ANİMASYON */
+.nav-menu ul li ul.dropdown-menu li a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu ul li ul.dropdown-menu li a:hover {
+    background: #112C66;
+    color: #fff !important;
+}
+
+.nav-menu ul li ul.dropdown-menu li a:hover span {
+    transform: scale(1.12);
 }

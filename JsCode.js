@@ -363,3 +363,15 @@ function translateTo(lang) {
         console.warn("Google Translate Element bulunamadı. Script yüklenmemiş olabilir.");
     }
 }
+
+function akilliGeriDon() {
+    const neredenGeldim = document.referrer; // Bir önceki sayfanın tam adresi
+
+    // Eğer bir önceki sayfa ana sayfa (index.html) ise veya referrer boşsa (direkt giriş)
+    if (neredenGeldim.includes('index.html') || neredenGeldim === "" || neredenGeldim.endsWith('/')) {
+        window.location.href = 'DevamEdenProjeler.html'; 
+    } else {
+        // Eğer kullanıcı zaten listeleme sayfalarından birinden geldiyse kaldığı yere döner
+        window.history.back();
+    }
+}

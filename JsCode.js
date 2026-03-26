@@ -108,7 +108,7 @@ const projeler = {
                 resim: 'images/Limonlu-Bahce.png',
                 galeri: [],
                 aciklama: 'Ümraniye’nin doğal dokusuyla bütünleşen bu projede, estetik ve konforu ön planda tutan ince yapı işlerini üstlendik. 2023-2025 dönemini kapsayan çalışmamızla, modern yaşam alanlarının tüm dekoratif ve bitiş detaylarını titiz bir işçilikle hayata geçiriyoruz.',
-                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2023 - 2025' , 'Konut': '142 Daire', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2023 - 2025' , 'Konut': '?? Daire', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
             },
 
             'proje15': {
@@ -156,7 +156,7 @@ const projeler = {
                 resim: 'images/Tema-istanbul.jpg',
                 galeri: [],
                 aciklama: 'Küçükçekmece’de 333.880 m² gibi sembolik bir alanda yükselen 3.531 konutluk dev projede, ince işler ve mantolama partneri olarak yer aldık. 2014-2015 yıllarındaki bu iş birliğimiz, yüksek kapasiteli projeleri yönetme hızımızı kanıtladı.',
-                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '2014 - 2015' , 'Konut': '142 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '333.880m² ',  }
+                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '2014 - 2015' , 'Konut': '?? Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '333.880m² ',  }
             },
 
             'proje21': {
@@ -164,7 +164,7 @@ const projeler = {
                 resim: 'images/Vadi-Referans.jpg',
                 galeri: [],
                 aciklama: 'Başakşehir’de toplam 47.335 m² inşaat alanına sahip bu projede, yapının omurgasını oluşturan kaba işleri gerçekleştirdik. 2018-2020 yılları arasındaki bu çalışma, mühendislik gücümüzü yansıtan önemli bir referansımızdır.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2018 - 2020' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 47.335m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2018 - 2020' , 'Konut': '?? Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 47.335m² ',  }
             },
 
             'proje22': {
@@ -179,7 +179,7 @@ const projeler = {
                 baslik: 'Avrupa Konutları Başakşehir',
                 resim: 'images/Basaksehir-Avrupa-Konutlari-Projesi.jpg',
                 galeri: [],
-                aciklama: 'Başakşehir’de 72.706 m²’lik toplam alanın 10.905 m²’lik kısmında, 60 birimin ince işlerini ve mantolama faaliyetlerini yürüttük. 2016-2017 dönemindeki bu çalışmamızla, büyük ölçekli bir projenin spesifik bir bölümünde uzmanlık sunduk',
+                aciklama: 'Başakşehir’de 72.706 m²’lik toplam alanın 10.905 m²’lik kısmında, 60 birimin ince işlerini ve mantolama faaliyetlerini yürüttük. 2016-2017 dönemindeki bu çalışmamızla, büyük ölçekli bir projenin spesifik bir bölümünde uzmanlık sunduk.',
                 teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2016 - 2017' , 'Konut': '60 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': ' 10.925m² ',  }
             },
 
@@ -204,15 +204,15 @@ const projeler = {
                 resim: 'images/comfort.png',
                 galeri: [],
                 aciklama: '174.172 m² inşaat alanına sahip bu dev projede, 124 daire ve 20 ticari birimin ince işler ve mantolama süreçlerini başarıyla yönettik. 2021-2022 döneminde tamamladığımız bu çalışma, konfor odaklı mimariyi teknik uzmanlığımızla birleştirdi.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '124 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
             },
 
             'proje27': {
                 baslik: 'Mavera Başakşehir',
                 resim: 'images/Mavera-Basaksehir.jpg',
                 galeri: [],
-                aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2021 - 2022' , 'Konut': '124 Daire', 'Ticari Alan': '20 Ticari Alan' , 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': ' 174.172m² ',  }
+                aciklama: 'Başakşehir bölgesindeki tecrübemizin bir parçası olan bu projede, tüm ince işlerin imalat süreçlerini yönettik. 2016-2017 yılları arasında, projenin bitiş aşamalarındaki kalite kontrol ve estetik uygulama sorumluluğunu başarıyla tamamladık.',
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2021 - 2022' , 'Konut': '60 Daire', 'Ticari Alan': '20 Ticari Alan' , 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': ' 174.172m² ',  }
             },
 
             'proje28': {
@@ -220,7 +220,7 @@ const projeler = {
                 resim: 'images/yenimahalle.png',
                 galeri: [],
                 aciklama: 'Bağcılar’da 48.973 m² alan üzerine konumlanan bu büyük ölçekli dönüşüm projesinde, 754 konut ve 50 ticari ünitenin kaba yapı işlerini üstlendik. 2023-2024 döneminde, yapının statik gücünü ve mühendislik temelini en sağlam şekilde inşa ettik.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2023 - 2024' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 48.793m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2023 - 2024' , 'Konut': '?? Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 48.793m² ',  }
             },
 
             'proje29': {
@@ -228,15 +228,15 @@ const projeler = {
                 resim: 'images/bahcetepe-istanbu-.jpg',
                 galeri: [],
                 aciklama: '368.472 m² gibi muazzam bir inşaat alanına sahip olan Bahçetepe’de; 1.476 daire ve 445 ticari birimin ince işlerini üstlendik. Projenin devasa ölçeğine uygun lojistik ve iş gücü yönetimimizle, iç mekan konforunu en üst seviyeye çıkardık.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '??' , 'Konut': '142 Daire', 'Ticari Alan': '?? Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' 368.472m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '??' , 'Konut': '?? Daire', 'Ticari Alan': '?? Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' 368.472m² ',  }
             },
 
             'proje30': {
                 baslik: 'Konya Temaşehir',
                 resim: 'images/Konya-Torkam.jpg',
                 galeri: [],
-                aciklama: 'İş dünyasının yeni merkezi. Modern mimari ve geniş sosyal alanlar.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                aciklama: 'Meram’da 260.000 m² gibi devasa bir ölçekte yükselen projenin; 232 daire ve 44 ticari ünitesini kapsayan 86.000 m²’lik alanında ince işler ve mantolama uyguladık. 2017-2020 arasındaki bu çalışma, Anadolu’daki en prestijli referanslarımızdan biri oldu.',
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '232 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
             },
 
             'proje31': {

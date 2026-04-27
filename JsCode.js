@@ -12,7 +12,7 @@ const projeler = {
                 resim: 'images/Göktürk-Duyu.png',
                 galeri: ['images/DUYU-GENEL-GORUNUS-02.jpg'],
                 aciklama: 'İstanbul’un yükselen değeri Kemerburgaz’da konumlanan projemiz, 110 dairelik hacmiyle bölgenin çehresini değiştirmeye hazırlanıyor. Yapımını üstlendiğimiz kaba inşaat ve ince yapı kalemlerinde, mühendislik disiplinimizden ödün vermeden ilerliyoruz. 2024’ten 2026’ya uzanan çalışma takvimimizde, sadece konut değil; her metrekaresinde yüksek standartlarda bir yaşam kalitesi sunan sağlam yapılar inşa ediyoruz. Uzman kadromuz ve yenilikçi bakış açımızla, Göktürk Duyu projesini modern şehircilik anlayışının bir sembolü olarak hayata geçiriyoruz. ',
-                teknik: {  'Konum': 'İstanbul / Kemerburgaz', 'Takvim': '2024 - 2026' , 'Konut': '110 Daire' , 'Yapılan İş': 'Kaba ve İnce İşler', 'Alan': ' ?? '  }
+                teknik: {  'Konum': 'İstanbul / Kemerburgaz', 'Takvim': '2024 - 2026' , 'Konut': '110 Daire' , 'Yapılan İş': 'Kaba ve İnce İşler', 'Alan': '  '  }
             },
 
             'proje3': {
@@ -20,7 +20,7 @@ const projeler = {
                 resim: 'images/imperium-No2.webp',
                 galeri: [],
                 aciklama: 'İstanbul’un en hızlı gelişen ticaret ve yaşam merkezlerinden Kağıthane’de yükselen İmperium No2, kentsel dönüşümün ve modern mimarinin güçlü bir örneğini sunuyor. 2.000 m² alan üzerinde, 123 daireden oluşan bu yoğun hacimli projede, kaba inşaattan en ince dekoratif detaylara kadar tüm imalat süreçlerini titizlikle yürütüyoruz.',
-                teknik: { 'Konum': 'İstanbul / Kağıthane', 'Takvim': '2024 - ??', 'Konut': '123 Daire', 'Yapılan İş': 'Kaba ve İnce İşler', 'Alan': ' 2000m²'    }
+                teknik: { 'Konum': 'İstanbul / Kağıthane', 'Takvim': '2024 - ', 'Konut': '123 Daire', 'Yapılan İş': 'Kaba ve İnce İşler', 'Alan': ' 2000m²'    }
             },
 
             'proje4': {
@@ -28,7 +28,7 @@ const projeler = {
                 resim: 'images/Günesli-AVP.jpg',
                 galeri: [],
                 aciklama: 'Bağcılar’da 72.148 m² gibi devasa bir alanda yükselen AVP Güneşli, 425 daire ve 24 ticari üniteden oluşan kapsamlı bir karma yaşam merkezidir. 2025 yılı itibarıyla projenin en kritik aşaması olan kaba yapı imalatlarını yüksek kapasiteli operasyon gücümüzle yürütüyoruz. Yapının sarsılmaz temelini ve taşıyıcı iskeletini, mühendislik disiplinimizle en sağlam şekilde inşa ediyoruz.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2025 - ??' , 'Konut': '425 Daire' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 72.148m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2025 - ' , 'Konut': '425 Daire' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 72.148m² ',  }
             },
 
             'proje5': {
@@ -44,7 +44,7 @@ const projeler = {
                 resim: 'images/Hayat-Flora.webp',
                 galeri: [],
                 aciklama: 'Küçükçekmece’nin dinamik dokusunda hayat bulan Hayat Flora, 460 dairelik geniş hacmiyle bölgenin en dikkat çeken konut hamlelerinden biridir. Projenin ana omurgasını oluşturan tüm kaba yapı imalatlarını, en ileri mühendislik teknikleriyle şekillendiriyoruz. Deprem güvenliği ve yapısal dayanıklılığı merkeze alan çalışma prensibimizle, projenin temelinden çatısına kadar her aşamada sarsılmaz bir kalite inşa ediyoruz.',
-                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '??' , 'Konut': '460 Daire', 'Ticari Alan': '?? Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '' , 'Konut': '460 Daire', 'Ticari Alan': ' Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' m² ',  }
             },
 
             'proje7': {
@@ -52,7 +52,7 @@ const projeler = {
                 resim: 'images/Hayat-City-Mahmut-Bey-.webp',
                 galeri: ['images/city.jpg','images/city3.jpg'],
                 aciklama: 'Bağcılar’ın merkezinde yükselen Hayat City, şehir hayatının dinamizmini konforla buluşturan bir prestij projesidir. 142 daire ve 900 m²’lik ticari alanı kapsayan bu çalışmamızda, yaşam alanlarının ruhunu belirleyen tüm ince yapı imalatlarını üstleniyoruz. 2024-2026 yılları arasında yürüttüğümüz bu süreçte; kullanıcı deneyimini merkeze alan, fonksiyonel ve yüksek estetik değerli iç mekân çözümleri sunarak projeye imzamızı atıyoruz.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '142 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje8': {
@@ -60,7 +60,7 @@ const projeler = {
                 resim: 'images/AVP-Esentepe.jpg',
                 galeri: [],
                 aciklama: 'Kartal’ın yükselen değerinde, 201 dairelik bir hacme sahip olan projenin ince işlerini ve mantolama uygulamalarını gerçekleştirdik. 2023-2024 yılları arasında tamamladığımız bu çalışma ile hem yapıların görsel kimliğini oluşturduk hem de enerji verimliliğini üst seviyeye taşıdık.',
-                teknik: {  'Konum': 'İstanbul / Kartal', 'Takvim': '2023 - 2024' , 'Konut': '201 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Kartal', 'Takvim': '2023 - 2024' , 'Konut': '201 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '  m² ',  }
             },
 
             'proje9': {
@@ -68,7 +68,7 @@ const projeler = {
                 resim: 'images/ESTP-2.Etap.webp',
                 galeri: [],
                 aciklama: '85 daireden oluşan bu projede, yapının temelinden dış cephesine kadar uzanan kaba, ince ve mantolama işlerini kapsayan bütünleşik bir hizmet sunduk. 2024-2025 takviminde yürüttüğümüz imalatlarla, sağlamlık ve estetiği tek bir mühendislik çatısı altında birleştirdik.',
-                teknik: {  'Konum': 'İstanbul / Kartal', 'Takvim': '2024 - 2025' , 'Konut': '85 Daire', 'Yapılan İş': 'Kaba, İnce ve Mantolama İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Kartal', 'Takvim': '2024 - 2025' , 'Konut': '85 Daire', 'Yapılan İş': 'Kaba, İnce ve Mantolama İşler', 'Alan': '  m² ',  }
             },
 
             'proje10': {
@@ -92,7 +92,7 @@ const projeler = {
                 resim: 'images/Mavera-Saraylari.jpg',
                 galeri: [],
                 aciklama: 'Başakşehir’de saray konseptiyle inşa edilen 56 özel dairenin tüm ince işlerini 2016 yılı içinde tamamladık. Projenin ruhuna uygun, yüksek estetik değere sahip ve lüks detaylarla örülü bir işçilik sergiledik.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2016 - 2016' , 'Konut': '56 Daire', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2016 - 2016' , 'Konut': '56 Daire', 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje13': {
@@ -100,7 +100,7 @@ const projeler = {
                 resim: 'images/Sakli-Vadi-Avrupa-Konutlari.jpg',
                 galeri: [],
                 aciklama: 'Sarıyer’in en özel lokasyonlarından birinde yer alan 226 konutluk projede, ince yapı işlerinin tüm detaylarını yönettik. 2022-2024 yılları arasında, lüks segmentin beklentilerini karşılayan yüksek kaliteli bitiş çözümlerimizle fark yarattık.',
-                teknik: {  'Konum': 'İstanbul / Sarıyer', 'Takvim': '2022 - 2024' , 'Konut': '226 Daire', 'Ticari Alan': '20 Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Sarıyer', 'Takvim': '2022 - 2024' , 'Konut': '226 Daire', 'Ticari Alan': '20 Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje14': {
@@ -108,7 +108,7 @@ const projeler = {
                 resim: 'images/Limonlu-Bahce.png',
                 galeri: [],
                 aciklama: 'Ümraniye’nin doğal dokusuyla bütünleşen bu projede, estetik ve konforu ön planda tutan ince yapı işlerini üstlendik. 2023-2025 dönemini kapsayan çalışmamızla, modern yaşam alanlarının tüm dekoratif ve bitiş detaylarını titiz bir işçilikle hayata geçiriyoruz.',
-                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2023 - 2025' , 'Konut': '?? Daire', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2023 - 2025' , 'Konut': ' Daire', 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje15': {
@@ -116,7 +116,7 @@ const projeler = {
                 resim: 'images/EMAAR-Toskana-Vadisi.webp',
                 galeri: [],
                 aciklama: 'Büyükçekmece’nin en prestijli villa projelerinden olan 469 konutluk Toskana Vadisi’nde, 2013 yılında yapısal çözümlerimizle yer aldık. Villa segmentindeki teknik tecrübemizi bu dünya standartlarındaki projeye taşıdık.',
-                teknik: {  'Konum': 'İstanbul / Büyükçekmece', 'Takvim': '2013 - 2013' , 'Konut': '469 Villa', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Büyükçekmece', 'Takvim': '2013 - 2013' , 'Konut': '469 Villa', 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje16': {
@@ -132,7 +132,7 @@ const projeler = {
                 resim: 'images/MostarMahal.png',
                 galeri: [],
                 aciklama: 'Başakşehir lokasyonunda 32 dairelik butik bir konsepte sahip olan Mostar Mahal’de, ince yapı imalatlarını üstlendik. 2023-2024 takvimiyle tamamlanan projede, detaylardaki hassasiyetimizle fark yaratan bir yaşam alanı sunduk.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2023 - 2024' , 'Konut': '32 Daire', 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2023 - 2024' , 'Konut': '32 Daire', 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje18': {
@@ -140,7 +140,7 @@ const projeler = {
                 resim: 'images/Fikirtepe.jpg',
                 galeri: [],
                 aciklama: 'Kadıköy’ün en büyük kentsel dönüşüm alanlarından biri olan Fikirtepe’de; 11.295 daire ve 813 ticari ünitelik devasa bir kapasite üzerinde 2019-2021 yılları arasında yapısal hizmetlerimizi sunduk.',
-                teknik: {  'Konum': 'İstanbul / Kadıköy', 'Takvim': '2019 - 2021' , 'Konut': '?? Daire', 'Ticari Alan': '?? Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Kadıköy', 'Takvim': '2019 - 2021' , 'Konut': ' Daire', 'Ticari Alan': ' Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje19': {
@@ -148,7 +148,7 @@ const projeler = {
                 resim: 'images/Yaman-Evler.jpg',
                 galeri: [],
                 aciklama: 'Ümraniye’deki 200 dairelik bu etapta, projenin ince işlerini ve dış cephe mantolama süreçlerini tamamladık. 2020-2021 yıllarını kapsayan bu imalatımızla, yapının hem iç mekan estetiğine hem de dış ortam yalıtım performansına katkıda bulunduk.',
-                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2020 - 2021' , 'Konut': '200 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Ümraniye', 'Takvim': '2020 - 2021' , 'Konut': '200 Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '  m² ',  }
             },
 
             'proje20': {
@@ -156,7 +156,7 @@ const projeler = {
                 resim: 'images/Tema-istanbul.jpg',
                 galeri: [],
                 aciklama: 'Küçükçekmece’de 333.880 m² gibi sembolik bir alanda yükselen 3.531 konutluk dev projede, ince işler ve mantolama partneri olarak yer aldık. 2014-2015 yıllarındaki bu iş birliğimiz, yüksek kapasiteli projeleri yönetme hızımızı kanıtladı.',
-                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '2014 - 2015' , 'Konut': '?? Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '333.880m² ',  }
+                teknik: {  'Konum': 'İstanbul / Küçükçekmece', 'Takvim': '2014 - 2015' , 'Konut': ' Daire', 'Yapılan İş': 'İnce İşler ve Mantolama', 'Alan': '333.880m² ',  }
             },
 
             'proje21': {
@@ -164,7 +164,7 @@ const projeler = {
                 resim: 'images/Vadi-Referans.jpg',
                 galeri: [],
                 aciklama: 'Başakşehir’de toplam 47.335 m² inşaat alanına sahip bu projede, yapının omurgasını oluşturan kaba işleri gerçekleştirdik. 2018-2020 yılları arasındaki bu çalışma, mühendislik gücümüzü yansıtan önemli bir referansımızdır.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2018 - 2020' , 'Konut': '?? Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 47.335m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '2018 - 2020' , 'Konut': ' Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 47.335m² ',  }
             },
 
             'proje22': {
@@ -188,7 +188,7 @@ const projeler = {
                 resim: 'images/Güzelce.png',
                 galeri: [],
                 aciklama: 'Büyükçekmece’nin en prestijli lokasyonlarından birinde hayata geçen bu projede; 342 konut ve 111 ticari ünitenin inşaat süreçlerinde aktif rol aldık. 2018-2021 yılları arasında, projenin kaba, ince ve mantolama işlerini kapsayan "uçtan uca" bir imalat süreci yürüttük. Hem geniş yaşam alanlarının estetik detaylarını hem de ticari birimlerin fonksiyonel altyapısını mühendislik gücümüzle şekillendirerek, bölgenin en kapsamlı karma projelerinden birine imzamızı attık.',
-                teknik: {  'Konum': 'İstanbul / Büyükçekmece', 'Takvim': '2018 - 2021' , 'Konut': '342 Daire', 'Ticari Alan': '111 Ticari Alan' , 'Yapılan İş': 'Kaba, İnce ve Mantolama İşleri', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Büyükçekmece', 'Takvim': '2018 - 2021' , 'Konut': '342 Daire', 'Ticari Alan': '111 Ticari Alan' , 'Yapılan İş': 'Kaba, İnce ve Mantolama İşleri', 'Alan': '  m² ',  }
             },
 
             'proje25': {
@@ -204,7 +204,7 @@ const projeler = {
                 resim: 'images/comfort.png',
                 galeri: [],
                 aciklama: '174.172 m² inşaat alanına sahip bu dev projede, 124 daire ve 20 ticari birimin ince işler ve mantolama süreçlerini başarıyla yönettik. 2021-2022 döneminde tamamladığımız bu çalışma, konfor odaklı mimariyi teknik uzmanlığımızla birleştirdi.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '124 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '124 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje27': {
@@ -220,7 +220,7 @@ const projeler = {
                 resim: 'images/yenimahalle.png',
                 galeri: [],
                 aciklama: 'Bağcılar’da 48.973 m² alan üzerine konumlanan bu büyük ölçekli dönüşüm projesinde, 754 konut ve 50 ticari ünitenin kaba yapı işlerini üstlendik. 2023-2024 döneminde, yapının statik gücünü ve mühendislik temelini en sağlam şekilde inşa ettik.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2023 - 2024' , 'Konut': '?? Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 48.793m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2023 - 2024' , 'Konut': ' Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'Kaba İşler', 'Alan': ' 48.793m² ',  }
             },
 
             'proje29': {
@@ -228,7 +228,7 @@ const projeler = {
                 resim: 'images/bahcetepe-istanbu-.jpg',
                 galeri: [],
                 aciklama: '368.472 m² gibi muazzam bir inşaat alanına sahip olan Bahçetepe’de; 1.476 daire ve 445 ticari birimin ince işlerini üstlendik. Projenin devasa ölçeğine uygun lojistik ve iş gücü yönetimimizle, iç mekan konforunu en üst seviyeye çıkardık.',
-                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '??' , 'Konut': '?? Daire', 'Ticari Alan': '?? Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' 368.472m² ',  }
+                teknik: {  'Konum': 'İstanbul / Başakşehir', 'Takvim': '' , 'Konut': ' Daire', 'Ticari Alan': ' Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' 368.472m² ',  }
             },
 
             'proje30': {
@@ -236,7 +236,7 @@ const projeler = {
                 resim: 'images/Konya-Torkam.jpg',
                 galeri: [],
                 aciklama: 'Meram’da 260.000 m² gibi devasa bir ölçekte yükselen projenin; 232 daire ve 44 ticari ünitesini kapsayan 86.000 m²’lik alanında ince işler ve mantolama uyguladık. 2017-2020 arasındaki bu çalışma, Anadolu’daki en prestijli referanslarımızdan biri oldu.',
-                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '232 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': ' ?? m² ',  }
+                teknik: {  'Konum': 'İstanbul / Bağcılar', 'Takvim': '2024 - 2026' , 'Konut': '232 Daire', 'Ticari Alan': '900m² Ticari Alan' , 'Yapılan İş': 'İnce İşler', 'Alan': '  m² ',  }
             },
 
             'proje31': {
